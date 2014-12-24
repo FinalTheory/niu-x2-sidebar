@@ -16,8 +16,8 @@
     <div class="niu2-sidebar-label">
         <i id="niu2-sidebar-toc-ctrl" class="fa fa-plus"></i>{{ NIUX2_HEADER_TOC_TRANSL | default("TOC") }}
     </div>
+    <a href="#content-heading">{{ page.title }}</a>
     <ol id="niu2-sidebar-toc-list">
-        <li><a href="#content-heading">{{ page.title }}</a></li>
         {{ page.html_toc }}
         {% if (page.metadata['comment'] is not defined) or (page.metadata['comment'] | trim | upper == 'ON') %}
         {% if DISQUS_SITENAME or NIUX2_DUOSHUO_SHORTNAME %}

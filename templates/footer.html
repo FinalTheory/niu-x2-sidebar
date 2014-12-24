@@ -2,12 +2,12 @@
     <hr/>
 	<p>
 		Powered by <a href="https://github.com/getpelican/pelican">Pelican</a>, 
-        <a href="https://github.com/mawenbao/niu-x2-sidebar">theme</a> built with <a href="http://getbootstrap.com">Bootstrap3</a>
-		by <a href="http://blog.atime.me">Ma Wenbao</a>, icons by 
-		<a href="http://fortawesome.github.io/Font-Awesome">Font Awesome</a>.
+        theme built with <a href="http://getbootstrap.com">Bootstrap3</a> 
+		modified by <a href="https://github.com/FinalTheory/pelican-theme">FinalTheory</a>, 
+		icons by <a href="http://fortawesome.github.io/Font-Awesome">Font Awesome</a>.
 	</p>
 	<p>
-		©
+		COPYRIGHT ©
         {% if all_articles is defined %}
             {% set articles = all_articles %}
         {% endif %}
@@ -26,11 +26,4 @@
 			<a class="niu2-footer-link" href="{{ link[2] }}" title="{{ link[1] }}">{{ link[0] }}</a>
 		{% endfor %}
     </p>
-    <p class="niu2-icons">
-	    {% for icon in NIUX2_FOOTER_ICONS %}
-	        <a class="niu2-footer-icon" href="{{ icon[2] }}" title="{{ icon[1] }}">
-	            <i class="fa {{ icon[0] }} fa-lg"></i>
-	        </a>
-	    {% endfor %}
-	</p>
 </div>

@@ -186,11 +186,11 @@ div.popover {
     -webkit-backface-visibility: hidden;
 }
 
-/*
+
 #niu2-main-content {
-    font-size: 15px;
+    font-size: 16px;
 }
-*/
+
 
 #niu2-main-content ul ul, 
 #niu2-main-content ol ul,
@@ -395,6 +395,7 @@ img {
 .niu2-404-info {
     font-size: 50px;
     text-align: center;
+    margin-top: 40px;
 }
 
 #niu2-cse-wrapper {
@@ -484,6 +485,12 @@ img {
 
 .niu2-footer {
     clear: both;
+    transition: opacity 0.5s ease-in;
+    opacity: 0.4;
+}
+
+.niu2-footer:hover {
+    opacity: 1.0;
 }
 
 .niu2-footer hr {
@@ -512,7 +519,17 @@ img {
 	margin-left: 5px;
 }
 
+.niu2-icons {
+	transition: opacity 0.5s ease-in;
+	opacity:0.4;
+}
+
+.niu2-icons:hover {
+	opacity:1.0;
+}
+
 .niu2-icons a {
+		color: green;
     text-decoration: none;	
 }
 

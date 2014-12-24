@@ -7,6 +7,14 @@
     {% block content_header %}
     <h1 class="niu2-index-title">{{ SITENAME }}</h1>
     {% endblock content_header %}
+    <p class="niu2-icons">
+	    {% for icon in NIUX2_FOOTER_ICONS %}
+	        <a class="niu2-footer-icon" href="{{ icon[2] }}" title="{{ icon[1] }}">
+	            <i class="fa {{ icon[0] }} fa-2x"></i>
+	        </a>
+	    {% endfor %}
+		</p>
+		<br>
 </div>
 
 <div class="col-md-8 col-md-offset-2">
