@@ -24,7 +24,7 @@ SITEURL = ''
 DEFAULT_LANG = u'zh_CN'
 TIMEZONE = 'Asia/Shanghai'
 DEFAULT_DATE = 'fs'
-# UPDATEDATE_MODE = 'metadata'
+UPDATEDATE_MODE = 'metadata'
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
@@ -45,7 +45,8 @@ PLUGINS = [
     'niux2_lazyload_helper',
     'pelican-update-date',
     'sitemap',
-    'summary'
+    'summary',
+    'render_math',
 ]
 
 # 下面这个dict定义了一组编译后不变的静态地址链接
