@@ -11,7 +11,8 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # These settings will overwrite pelicanconf.py when publishing
-SITEURL = 'http://finaltheory.info'
+SITEURL = 'http://blog.finaltheory.info'
+# HOMEURL = 'http://finaltheory.info'
 RELATIVE_URLS = False
 
 FEED_ALL_RSS = 'feed.xml'

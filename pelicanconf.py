@@ -18,6 +18,8 @@ import os
 # 名称以及站点相关
 AUTHOR = u'FinalTheory'
 SITENAME = u'FinalTheory\u7684\u6280\u672f\u611f\u609f'
+HOMENAME = u'首页'
+# HOMEURL = ''
 SITEURL = ''
 
 # 时间与区域
@@ -223,7 +225,7 @@ NIUX2_FOOTER_LINKS = [
 ]
 
 NIUX2_FOOTER_ICONS = [
-    ('fa-wordpress', 'My WordPress Blog', 'http://blog.finaltheory.info'),
+    ('fa-wordpress', 'My WordPress Blog', 'http://wp.finaltheory.info'),
     ('fa-github', 'My Github Page', 'https://github.com/FinalTheory'),
     ('fa-cloud', 'My CodeForces Page', 'http://codeforces.com/profile/FinalTheory'),
     ('fa-renren', 'My RenRen Page', 'http://renren.com/FinalTheory'),

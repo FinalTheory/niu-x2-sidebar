@@ -3,7 +3,7 @@
 {% block title %}{{ super() }}{% endblock %}
 
 {% block content %}
-<div class="col-md-8 col-md-offset-2">
+<div class="col-md-6 col-md-offset-3">
     {% block content_header %}
     <h1 class="niu2-index-title">{{ SITENAME }}</h1>
     {% endblock content_header %}
@@ -17,7 +17,7 @@
 		<br>
 </div>
 
-<div class="col-md-8 col-md-offset-2">
+<div class="col-md-6 col-md-offset-3">
     {% block content_body %}
     {% if articles %}
     {% for article in (articles_page.object_list if articles_page else articles) %}
@@ -48,7 +48,7 @@
 {% endblock content %}
 
 {% block footer %}
-<div id="body-footer" class="col-md-8 col-md-offset-2">
+<div id="body-footer" class="col-md-6 col-md-offset-3">
     {% include "footer.html" %}
 </div>
 {% endblock footer %}
