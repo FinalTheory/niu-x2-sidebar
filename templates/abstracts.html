@@ -1,0 +1,12 @@
+{
+{% for idx in range(MAX_ABSTRACT_NUM) %}
+{% set article = articles[idx] %}
+{{ "\"article%d\""|format(idx+1) }}: {
+"title": "{{ article.title }}",
+"summary": "{{ article.summary.replace('\n', '').replace('\"', '\\"') }}",
+"date": "{{ article.date.strftime('%Y-%m-%d') }}",
+"url": "{{ SITEURL + '/' + article.url }}"
+}{% if idx+1 != MAX_ABSTRACT_NUM %}{{ ',' }} {% endif %}
+
+{% endfor %}
+}

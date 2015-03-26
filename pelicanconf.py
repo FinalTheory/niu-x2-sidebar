@@ -60,6 +60,7 @@ EXTRA_PATH_METADATA = {
 }
 
 TEMPLATE_PAGES = {
+		"abstracts.html": "abstracts.html",
     "404.html": "404.html",
     "archives_updatedate.html": "archives_updatedate.html",
 }
@@ -83,6 +84,8 @@ AUTHORS_SAVE_AS = ''
 # RSS以及文章输出相关的设置
 
 # 缓存策略与页面输出
+SUMMARY_MAX_LENGTH = 10
+MAX_ABSTRACT_NUM = 3
 LOAD_CONTENT_CACHE = False
 CACHE_CONTENT = False
 # 加入这个傻逼插件后，会在包含大写的header中自动加入<span>，因此一定要关掉！！！
@@ -209,9 +212,10 @@ NIUX2_CATEGORY_MAP = {
 }
 
 NIUX2_HEADER_SECTIONS = [
-    ('标签', 'Tags', '/tag/', 'fa-tag'),
+    ('标签', 'Tags', '/tag/', 'fa-tags'),
     ('项目', 'My Projects', '/MyProjects.html', 'fa-rocket'),
-    ('关于', 'About Me', '/AboutMe.html', 'fa-anchor'),
+    ('关于我', 'About Me', '/AboutMe.html', 'fa-anchor'),
+    ('网站首页', 'Site HomePage', 'http://finaltheory.info/', 'fa-sitemap'),
 ]
 
 NIUX2_HEADER_DROPDOWN_SECTIONS = OrderedDict()

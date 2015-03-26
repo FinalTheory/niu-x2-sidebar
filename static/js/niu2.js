@@ -142,7 +142,7 @@ function initToolbar() {
                         loadingOverly.hide();
                     });
                 });
-                footer.animate({width: '65%'}, leftCSlideDuration);
+                footer.animate({width: '50%'}, leftCSlideDuration);
             } else {
                 markVerticalPosition();
                 leftContainer.animate({width: '50%'}, leftCSlideDuration, complete=function() {
