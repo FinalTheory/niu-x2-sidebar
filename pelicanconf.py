@@ -36,7 +36,7 @@ RELATIVE_URLS = True
 
 PATH = 'content'
 STATIC_PATHS = ['images', 'files', 'extra']
-THEME = "MyTheme\\pelican-theme"
+THEME = "MyTheme/pelican-theme"
 PLUGIN_PATHS = ['pelican-plugins', 'MyTheme']
 FILENAME_METADATA = '(?P<slug>.*)'
 PLUGINS = [
@@ -54,9 +54,9 @@ PLUGINS = [
 # 下面这个dict定义了一组编译后不变的静态地址链接
 # 注意这里路径的写法，如果是在Linux下，要换成对应的风格！
 EXTRA_PATH_METADATA = {
-    'extra\\favicon.ico': {'path': 'favicon.ico'},
-    'extra\\LICENSE.txt': {'path': 'LICENSE.txt'},
-    'extra\\robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/LICENSE.txt': {'path': 'LICENSE.txt'},
+    'extra/robots.txt': {'path': 'robots.txt'},
 }
 
 TEMPLATE_PAGES = {
@@ -136,6 +136,12 @@ SITEMAP = {
 
 # extrac_headings plugin config
 def my_slugify(value, sep):
+    if type(value) == unicode:
+        # Fix for encoding errors
+        if 'nt' in os.name.lower():
+            value = value.encode('gb18030')
+        else:
+            value = value.encode('utf-8')
     m = md5.new()
     m.update(value)
     return m.digest().encode('hex')[:5]
