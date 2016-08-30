@@ -221,7 +221,7 @@ NIUX2_HEADER_SECTIONS = [
     ('标签', 'Tags', '/tag/', 'fa-tags'),
     ('项目', 'My Projects', '/MyProjects.html', 'fa-rocket'),
     ('关于我', 'About Me', '/AboutMe.html', 'fa-anchor'),
-    ('网站首页', 'Site HomePage', 'http://finaltheory.info/', 'fa-sitemap'),
+    ('网站首页', 'Site HomePage', 'http://finaltheory.me/', 'fa-sitemap'),
 ]
 
 NIUX2_HEADER_DROPDOWN_SECTIONS = OrderedDict()
@@ -235,7 +235,7 @@ NIUX2_FOOTER_LINKS = [
 ]
 
 NIUX2_FOOTER_ICONS = [
-    ('fa-wordpress', 'My WordPress Blog', 'http://wp.finaltheory.info'),
+    ('fa-wordpress', 'My WordPress Blog', 'http://wp.finaltheory.me'),
     ('fa-github', 'My Github Page', 'https://github.com/FinalTheory'),
     ('fa-cloud', 'My CodeForces Page', 'http://codeforces.com/profile/FinalTheory'),
     ('fa-renren', 'My RenRen Page', 'http://renren.com/FinalTheory'),
